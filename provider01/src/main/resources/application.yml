@@ -1,0 +1,19 @@
+spring:
+  datasource:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql:///mydb8?serverTimezone=UTC&useSSL=true&characterEncoding=utf8
+      username: root
+      password: 123456
+      type: com.alibaba.druid.pool.DruidDataSource
+  # 为该服务起别名，注册到Eureka
+  application:
+    name: provider01
+server:
+  port: 7788
+mybatis:
+  mapper-locations: classpath*:mapper/*.xml
+eureka:
+  client:
+    service-url:
+      defaultZone: http://root:123456@localhost:7777/eureka/
+

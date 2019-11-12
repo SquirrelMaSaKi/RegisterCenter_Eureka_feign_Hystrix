@@ -1,0 +1,12 @@
+server:
+  port: 7791
+eureka:
+  client:
+    service-url:
+      defaultZone: http://root:123456@localhost:7777/eureka/
+spring:
+  application:
+    name: consumer03FallBackFactory #起一个名字,eureka区分是不是一个集群的方式就是看名字是不是一样的
+feign:
+  hystrix:
+    enabled: true #必须设置为true 否则会出现错误
