@@ -1,0 +1,17 @@
+server:
+  port: 34100
+eureka:
+  client:
+    service-url:
+      defaultZone: http://laowang:xiaomei@localhost:8000/eureka
+spring:
+  application:
+    name: 16zuul
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+zuul:
+  routes:
+    12userconsumer-eureka-hystrix: /zhangquan/** #给12userconsumer-eureka-hystrix指定映射的地址别名

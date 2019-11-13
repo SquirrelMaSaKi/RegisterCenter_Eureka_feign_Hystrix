@@ -3,7 +3,6 @@ package com.rj.service.impl;
 import com.rj.dao.UserDao;
 import com.rj.pojo.User;
 import com.rj.service.UserService;
-import com.sun.org.apache.regexp.internal.RE;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

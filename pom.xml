@@ -9,6 +9,9 @@
         <module>consumer01Feign</module>
         <module>consumer02Hetrix</module>
         <module>consumer03FallBackFactory</module>
+        <module>hystrix_dashboard</module>
+        <module>zuul</module>
+        <module>zuul_regular</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

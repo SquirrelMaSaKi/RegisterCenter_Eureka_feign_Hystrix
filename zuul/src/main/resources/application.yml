@@ -1,0 +1,22 @@
+# 访问：http://localhost:7792/actuator/routes 可以看到该网关下的所有的Eureka服务有哪些
+# 可以通过7792这个端口号的网关直接拼接对应的服务名称路径，后面再拼接对应controller的地址即可访问
+server:
+  port: 7792
+eureka:
+  client:
+    service-url:
+      defaultZone: http://root:123456@localhost:7777/eureka/
+spring:
+  application:
+    name: zuulService
+# 如果在依赖中配置有actuator配置，则必须写如下配置信息，否则无法发现该服务
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+zuul:
+  routes:
+     zuul01: #可以随便写,但是不能重复，访问的时候使用zuul01起别名访问
+      path: /zuul01/**
+      serviceId: provider01 #服务名称

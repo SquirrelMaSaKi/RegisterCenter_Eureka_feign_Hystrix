@@ -1,0 +1,15 @@
+server:
+  port: 7793
+eureka:
+  client:
+    service-url:
+      defaultZone: http://root:123456@localhost:7777/eureka/
+spring:
+  application:
+    name: zuulService_Regular
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
