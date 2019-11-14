@@ -10,6 +10,7 @@ eureka:
     #  Eureka对外提供服务的注册地址,也就是eureka最终运⾏的地址
     # 此处我们使⽤的是localhost,springboot模式启动,所以是localhost:${server.port}/eureka
     # 服务器的访问必须去掉eureka，因为会自动添加
+    # 访问地址：http://localhost:7777/
     service-url:
       defaultZone: http://localhost:${server.port}/eureka/
 spring:

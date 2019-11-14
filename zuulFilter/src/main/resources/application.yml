@@ -1,0 +1,14 @@
+server:
+  port: 7795
+eureka:
+  client:
+    service-url:
+      defaultZone: http://root:123456@localhost:7777/eureka/
+spring:
+  application:
+    name: zuulFilter
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

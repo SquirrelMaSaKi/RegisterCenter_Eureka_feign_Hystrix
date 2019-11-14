@@ -1,0 +1,14 @@
+server:
+  port: 7794
+eureka:
+  client:
+    service-url:
+      defaultZone: http://root:123456@localhost:7777/eureka/
+spring:
+  application:
+    name: zuulRegularFallback
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
