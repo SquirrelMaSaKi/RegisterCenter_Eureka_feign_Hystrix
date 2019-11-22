@@ -1,0 +1,10 @@
+server:
+  port: 12300
+spring:
+  rabbitmq:
+    password: ssx12345
+    username: ssx12345
+    port: 5672
+    virtual-host: rj
+    #页面访问是http://49.235.14.186:15672/
+    host: 49.235.14.186

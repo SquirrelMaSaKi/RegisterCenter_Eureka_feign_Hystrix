@@ -14,6 +14,8 @@
         <module>zuul_regular</module>
         <module>zuul_regular_fallback</module>
         <module>zuulFilter</module>
+        <module>mqSender</module>
+        <module>mqReceiver</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
